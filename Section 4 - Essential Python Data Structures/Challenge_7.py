@@ -1,10 +1,9 @@
-# Write a Python script that replaces all occurrences of the first character in a
-# string with '$', except for the first occurrence itself.
+# Write a Python script that extracts the first and
+# last two characters from a user-entered string.
 # Example:
-# Input: 'mama'
-# Output: 'ma$a'
+# Input: 'Hello!'
+# Output: 'Heo!'
 
-word = input('Enter word: ')
-first_char = word[0]
-new_word = first_char + word[1:].replace(first_char, '$')
+word = input('Enter string: ')
+new_word = word[:2] + word[-2:]
 print(new_word)
